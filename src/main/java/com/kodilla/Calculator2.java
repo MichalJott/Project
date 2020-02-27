@@ -1,20 +1,17 @@
 package com.kodilla;
 
 class Calculator  {
-    int a = 7;
-    int b = 3;
 
-    public void subract() {
+    public void subtract(int a, int b) {
         int result = a - b;
 
     }
-    public void add() {
+    public void add(int a, int b) {
         int result = a + b;
         System.out.println(result);
-
     }
     public static void main (String [] args) {
         Calculator calculator = new Calculator();
-        calculator.add();
+        calculator.add(7,4);
     }
 }
