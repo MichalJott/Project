@@ -18,6 +18,10 @@ dependencies {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
 }
+dependencies    {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('junit:junit:4.13')
+}
 
 test {
     useJUnitPlatform()
