@@ -2,9 +2,10 @@ package com.kodilla.testing.shape;
 
 import java.util.Objects;
 
-public abstract class Square implements Shape {
+public class Square implements Shape {
     private String ShapeName = "Square";
-    private int Field = 128;
+    private int Field = 64;
+
 
     @Override
     public String getShapeName() {
@@ -14,6 +15,5 @@ public abstract class Square implements Shape {
     @Override
     public int getField() {
         return Field;
-
     }
 }

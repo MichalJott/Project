@@ -2,9 +2,9 @@ package com.kodilla.testing.shape;
 
 import java.util.Objects;
 
-public abstract class Triangle implements Shape {
+public class Triangle implements Shape {
     private String ShapeName = "Triangle";
-    private int field = 64;
+    private int Field = 128;
 
     @Override
     public String getShapeName() {
@@ -13,7 +13,6 @@ public abstract class Triangle implements Shape {
 
     @Override
     public int getField() {
-        return field;
-
+        return Field;
     }
 }
