@@ -1,5 +1,7 @@
 package forumuser;
 
+import com.kodilla.stream.forumuser.ForumUser;
+
 import java.util.ArrayList;
 import java.util.List;
 
