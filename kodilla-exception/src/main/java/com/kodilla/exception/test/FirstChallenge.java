@@ -1,0 +1,35 @@
+package com.kodilla.exception.test;
+
+public class FirstChallenge {
+
+    public double divide(double a, double b) throws ArithmeticException {
+        if (b == 0) {
+            throw new ArithmeticException("b is zero");
+
+
+        }
+        return a / b;
+    }
+
+
+    public static void main(String[] args) {
+
+        FirstChallenge firstChallenge = new FirstChallenge();
+
+        try {
+            double result = firstChallenge.divide(3, 1);
+            System.out.println(result);
+
+
+        } catch (ArithmeticException e) {
+            System.out.println("sth wrong is with numbers");
+
+
+        } finally {
+            System.out.println("still working");
+        }
+    }
+
+
+}
+
