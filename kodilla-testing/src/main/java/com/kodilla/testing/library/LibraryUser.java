@@ -30,22 +30,25 @@ public class LibraryUser {
         return "LibraryUser{" +
                 "firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", peselId=" + peselId +
+                ", peselId='" + peselId + '\'' +
                 '}';
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof LibraryUser)) return false;
         LibraryUser that = (LibraryUser) o;
-        return peselId == that.peselId &&
-                Objects.equals(firstname, that.firstname) &&
-                Objects.equals(lastname, that.lastname);
+        if (!firstname.equals(that.firstname)) return false;
+        if (!lastname.equals(that.lastname)) return false;
+        return peselId.equals(that.peselId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstname, lastname, peselId);
+        int result = firstname.hashCode();
+        result = 31 * result + lastname.hashCode();
+        result = 31 * result + peselId.hashCode();
+        return result;
     }
 }

@@ -6,22 +6,22 @@ import java.util.List;
 public class BookLibrary {
     LibraryDatabase libraryDatabase;
 
-    public BookLibrary(LibraryDatabase libraryDatabase){
+    public BookLibrary(LibraryDatabase libraryDatabase) {
         this.libraryDatabase = libraryDatabase;
     }
 
-    public List<Book> listBooksWithCondition(String titleFragment){
-        List<Book> bookList = new ArrayList<>();
-        Book book = new Book("Bond", "James Ben", 2000);
-        Book book1 = new Book("Bond", "James Ben", 2000);
-        Book book2= new Book("Bond", "James Ben", 2000);
-        Book book3 = new Book("Bond", "James Ben", 2000);
+    public List<Book> listBooksWithCondition(String titleFragment) {
+        List<Book> bookList = new ArrayList<Book>();
+        if (titleFragment.length() < 3) return bookList;
+        List<Book> resultList = libraryDatabase
+                .listBooksWithCondition(titleFragment);
+        if (resultList.size() > 20) return bookList;
+        bookList = resultList;
+        return bookList;
+    }
 
-
-        bookList.add(book);
-
-        // tymczasowo zwraca liste ksiazek
-        return  bookList;
+    public List<Book> listBooksInHandsOf(LibraryUser libraryUser){
+        return  this.libraryDatabase.listBooksInHandsOf(libraryUser);
     }
 
 }
