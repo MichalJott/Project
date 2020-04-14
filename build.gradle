@@ -1,6 +1,4 @@
 plugins {
-    id 'org.springframework.boot' version '2.2.4.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'java'
 }
 
@@ -13,18 +11,10 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    compile('org.springframework.boot:spring-boot-starter-web')
-    testCompile('junit:junit:4.13')
-    testCompile group: 'org.mockito', name: 'mockito-core', version: '3.3.0'
-    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
-    testImplementation('org.springframework.boot:spring-boot-starter-test') {
-        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-    }
-    implementation 'org.junit.jupiter:junit-jupiter'
-    implementation 'org.junit.jupiter:junit-jupiter'
-    implementation 'org.junit.jupiter:junit-jupiter'
+
+implementation 'org.junit.jupiter:junit-jupiter'
 }
+
 test {
     useJUnitPlatform()
 }
