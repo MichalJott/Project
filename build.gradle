@@ -12,9 +12,4 @@ repositories {
 
 dependencies {
 
-implementation 'org.junit.jupiter:junit-jupiter'
-}
-
-test {
-    useJUnitPlatform()
 }
