@@ -1,1 +1,6 @@
-Log: [Dziś mamy czwartek]
+Test Deep Copy:
+Origin library size 5
+AOrigin library size , after removed book from copied library : 5
+Test Swallow Copy :
+Origin library size 5
+AOrigin library size , after removed book from copied library : 4
