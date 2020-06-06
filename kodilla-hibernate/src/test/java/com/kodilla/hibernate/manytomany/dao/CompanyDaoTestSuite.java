@@ -128,7 +128,7 @@ public class CompanyDaoTestSuite {
         companyDao.save(greyMatter);
         int greyMatterId = greyMatter.getId();
 
-        List<Company> result = companyDao.searchByFirstThreeLettersOfCompanyName("Sof");
+        List<Company> result = companyDao.searchByFirstThreeLettersOfCompanyName("Gre");
 
         //Then
         Assert.assertNotEquals(0, result.size());
