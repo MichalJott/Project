@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-18T18:19:50" hostname="MJott.local" time="0.002">
+<testsuite name="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-09-02T18:29:54" hostname="MJott.local" time="0.01">
   <properties/>
-  <testcase name="testSaveSettings" classname="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" time="0.0"/>
-  <testcase name="testLoadSettings" classname="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" time="0.0"/>
+  <testcase name="testSaveSettings" classname="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" time="0.001"/>
+  <testcase name="testLoadSettings" classname="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" time="0.006"/>
   <testcase name="testGetFileName" classname="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" time="0.001"/>
   <system-out><![CDATA[Opening file
 Saving settings

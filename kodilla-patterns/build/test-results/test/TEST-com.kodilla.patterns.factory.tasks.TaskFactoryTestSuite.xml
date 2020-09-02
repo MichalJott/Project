@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-05-18T18:19:50" hostname="MJott.local" time="0.007">
+<testsuite name="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-09-02T18:29:54" hostname="MJott.local" time="0.03">
   <properties/>
   <testcase name="testCreatingNoExistingTask" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.001"/>
-  <testcase name="testExecutingDrivingTask" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.0"/>
+  <testcase name="testExecutingDrivingTask" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.015"/>
   <testcase name="testExecutingShoppingTask" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.001"/>
   <testcase name="testFactoryDriving" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.0"/>
-  <testcase name="testFactoryShopping" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.0"/>
-  <testcase name="testPaintingTask" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.001"/>
+  <testcase name="testFactoryShopping" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.005"/>
+  <testcase name="testPaintingTask" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
