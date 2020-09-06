@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-09-06T12:00:02" hostname="MJott.local" time="0.585">
+  <properties/>
+  <testcase name="testSaveManyToMany" classname="com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite" time="0.358"/>
+  <testcase name="testSearchingByLastname" classname="com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite" time="0.139"/>
+  <testcase name="testSearchingByFirstThreeLetters" classname="com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite" time="0.086"/>
+  <system-out><![CDATA[13:59:55.037 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+13:59:55.056 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+13:59:55.072 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+13:59:55.143 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+13:59:55.195 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite], using SpringBootContextLoader
+13:59:55.202 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: class path resource [com/kodilla/hibernate/manytomany/dao/CompanyDaoTestSuite-context.xml] does not exist
+13:59:55.203 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: class path resource [com/kodilla/hibernate/manytomany/dao/CompanyDaoTestSuiteContext.groovy] does not exist
+13:59:55.204 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:59:55.206 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: CompanyDaoTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:59:55.350 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+13:59:55.508 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/JOTTGROUP/Development/michal-jedrzejczyk-kodilla-java/kodilla-hibernate/build/classes/java/main/com/kodilla/hibernate/KodillaHibernateApplication.class]
+13:59:55.510 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.kodilla.hibernate.KodillaHibernateApplication for test class com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite
+13:59:55.673 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: using defaults.
+13:59:55.679 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+13:59:55.731 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+13:59:55.743 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45bc835, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5dfc52c6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7bb37879, org.springframework.test.context.support.DirtiesContextTestExecutionListener@62b06d4c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@38700b4f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7a504e5, org.springframework.test.context.event.EventPublishingTestExecutionListener@67b5d4d8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@60e1f6f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3e9c5692, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@11b1ff88, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58ebea72, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2ee86367]
+13:59:55.753 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+13:59:55.754 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+13:59:55.757 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+13:59:55.758 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+13:59:55.766 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7850d767 testClass = CompanyDaoTestSuite, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6ae30eb0 testClass = CompanyDaoTestSuite, locations = '{}', classes = '{class com.kodilla.hibernate.KodillaHibernateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@fc3bc2d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2b4600e5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1695f3db, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3cf9fb15], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+13:59:55.768 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+13:59:55.769 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+13:59:55.775 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@7850d767 testClass = CompanyDaoTestSuite, testInstance = com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite@766d750, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6ae30eb0 testClass = CompanyDaoTestSuite, locations = '{}', classes = '{class com.kodilla.hibernate.KodillaHibernateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@fc3bc2d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2b4600e5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1695f3db, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3cf9fb15], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+13:59:55.801 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.6.RELEASE)
+
+2020-09-06 13:59:56.328  INFO 5762 --- [    Test worker] c.k.h.m.dao.CompanyDaoTestSuite          : Starting CompanyDaoTestSuite on MJott.local with PID 5762 (started by JOTTGROUP in /Users/JOTTGROUP/Development/michal-jedrzejczyk-kodilla-java/kodilla-hibernate)
+2020-09-06 13:59:56.339  INFO 5762 --- [    Test worker] c.k.h.m.dao.CompanyDaoTestSuite          : No active profile set, falling back to default profiles: default
+2020-09-06 13:59:57.109  INFO 5762 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-09-06 13:59:57.325  INFO 5762 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202ms. Found 8 JPA repository interfaces.
+2020-09-06 13:59:58.226  INFO 5762 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-06 13:59:58.322  INFO 5762 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-09-06 13:59:58.535  INFO 5762 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-06 13:59:58.739  INFO 5762 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-06 13:59:59.120  INFO 5762 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-06 13:59:59.151  INFO 5762 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Hibernate: create table tasks_financials (id integer not null, paid bit, price decimal(19,2), primary key (id)) engine=InnoDB
+2020-09-06 14:00:00.544  WARN 5762 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table tasks_financials (id integer not null, paid bit, price decimal(19,2), primary key (id)) engine=InnoDB" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table tasks_financials (id integer not null, paid bit, price decimal(19,2), primary key (id)) engine=InnoDB" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:277) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:71) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) [spring-orm-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) [spring-orm-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) [spring-orm-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:126) ~[spring-boot-test-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412) ~[na:na]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) ~[na:na]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_241]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) ~[na:na]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_241]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'tasks_financials' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.2.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	... 83 common frames omitted
+
+Hibernate: alter table tasks add constraint FKoc5tyukkgk284esmsxkwe1ncy foreign key (tasks_financials_id) references tasks_financials (id)
+Hibernate: alter table tasks add constraint FK780cqhywlb8s3lrlu1dmm1jr2 foreign key (tasklist_id) references taskslists (id)
+2020-09-06 14:00:00.924  INFO 5762 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-06 14:00:01.113  INFO 5762 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-06 14:00:02.328  INFO 5762 --- [    Test worker] c.k.h.m.dao.CompanyDaoTestSuite          : Started CompanyDaoTestSuite in 6.522 seconds (JVM running for 8.566)
+2020-09-06 14:00:02.358  INFO 5762 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@7850d767 testClass = CompanyDaoTestSuite, testInstance = com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite@766d750, testMethod = testSaveManyToMany@CompanyDaoTestSuite, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6ae30eb0 testClass = CompanyDaoTestSuite, locations = '{}', classes = '{class com.kodilla.hibernate.KodillaHibernateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@fc3bc2d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2b4600e5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1695f3db, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3cf9fb15], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@b65fa7d]; rollback [true]
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+2020-09-06 14:00:02.699  INFO 5762 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@7850d767 testClass = CompanyDaoTestSuite, testInstance = com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite@766d750, testMethod = testSaveManyToMany@CompanyDaoTestSuite, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6ae30eb0 testClass = CompanyDaoTestSuite, locations = '{}', classes = '{class com.kodilla.hibernate.KodillaHibernateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@fc3bc2d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2b4600e5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1695f3db, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3cf9fb15], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+2020-09-06 14:00:02.707  INFO 5762 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@7850d767 testClass = CompanyDaoTestSuite, testInstance = com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite@4bed1c45, testMethod = testSearchingByLastname@CompanyDaoTestSuite, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6ae30eb0 testClass = CompanyDaoTestSuite, locations = '{}', classes = '{class com.kodilla.hibernate.KodillaHibernateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@fc3bc2d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2b4600e5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1695f3db, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3cf9fb15], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@b65fa7d]; rollback [true]
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into companies (company_name, company_id) values (?, ?)
+Hibernate: insert into employees (firstname, lastname, employee_id) values (?, ?, ?)
+Hibernate: insert into companies (company_name, company_id) values (?, ?)
+Hibernate: insert into employees (firstname, lastname, employee_id) values (?, ?, ?)
+Hibernate: insert into companies (company_name, company_id) values (?, ?)
+Hibernate: insert into employees (firstname, lastname, employee_id) values (?, ?, ?)
+Hibernate: insert into join_company_employee (employee_id, company_id) values (?, ?)
+Hibernate: insert into join_company_employee (employee_id, company_id) values (?, ?)
+Hibernate: insert into join_company_employee (employee_id, company_id) values (?, ?)
+Hibernate: insert into join_company_employee (employee_id, company_id) values (?, ?)
+Hibernate: insert into join_company_employee (employee_id, company_id) values (?, ?)
+Hibernate: select employee0_.employee_id as employee1_1_, employee0_.firstname as firstnam2_1_, employee0_.lastname as lastname3_1_ from employees employee0_ where employee0_.lastname like concat('%', ?, '%')
+2020-09-06 14:00:02.840  INFO 5762 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@7850d767 testClass = CompanyDaoTestSuite, testInstance = com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite@4bed1c45, testMethod = testSearchingByLastname@CompanyDaoTestSuite, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6ae30eb0 testClass = CompanyDaoTestSuite, locations = '{}', classes = '{class com.kodilla.hibernate.KodillaHibernateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@fc3bc2d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2b4600e5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1695f3db, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3cf9fb15], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+2020-09-06 14:00:02.844  INFO 5762 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@7850d767 testClass = CompanyDaoTestSuite, testInstance = com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite@10804895, testMethod = testSearchingByFirstThreeLetters@CompanyDaoTestSuite, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6ae30eb0 testClass = CompanyDaoTestSuite, locations = '{}', classes = '{class com.kodilla.hibernate.KodillaHibernateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@fc3bc2d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2b4600e5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1695f3db, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3cf9fb15], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@b65fa7d]; rollback [true]
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into companies (company_name, company_id) values (?, ?)
+Hibernate: insert into employees (firstname, lastname, employee_id) values (?, ?, ?)
+Hibernate: insert into companies (company_name, company_id) values (?, ?)
+Hibernate: insert into employees (firstname, lastname, employee_id) values (?, ?, ?)
+Hibernate: insert into companies (company_name, company_id) values (?, ?)
+Hibernate: insert into employees (firstname, lastname, employee_id) values (?, ?, ?)
+Hibernate: insert into join_company_employee (employee_id, company_id) values (?, ?)
+Hibernate: insert into join_company_employee (employee_id, company_id) values (?, ?)
+Hibernate: insert into join_company_employee (employee_id, company_id) values (?, ?)
+Hibernate: insert into join_company_employee (employee_id, company_id) values (?, ?)
+Hibernate: insert into join_company_employee (employee_id, company_id) values (?, ?)
+Hibernate: SELECT * FROM Companies where LEFT(company_name, 3) like ?
+2020-09-06 14:00:02.928  INFO 5762 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@7850d767 testClass = CompanyDaoTestSuite, testInstance = com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite@10804895, testMethod = testSearchingByFirstThreeLetters@CompanyDaoTestSuite, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6ae30eb0 testClass = CompanyDaoTestSuite, locations = '{}', classes = '{class com.kodilla.hibernate.KodillaHibernateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@fc3bc2d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2b4600e5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1695f3db, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3cf9fb15], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

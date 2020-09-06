@@ -8,7 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@NamedQuery(name = "Employee.searchByLastname", query = "FROM Employee where lastname like concat('%',:LASTNAME,'%')")
+@NamedQuery(name = "Employee.searchByLastname",
+        query = "FROM Employee where lastname like concat('%',:LASTNAME,'%')")
+@NamedQuery(name = "Employee.retrieveByFragmentName",
+        query = "FROM Employee WHERE lastname LIKE CONCAT ('%', :NAMEFRAGMENT, '%')"
+)
+
 
 @Entity
 @Table(name = "EMPLOYEES")

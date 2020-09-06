@@ -11,6 +11,12 @@ import java.util.List;
 @NamedNativeQuery(
         name = "Company.searchByFirstThreeLettersOfCompanyName",
         query = "SELECT * FROM Companies where LEFT(company_name, 3) like :NAME ", resultClass = Company.class)
+
+@NamedNativeQuery(
+        name = "Company.searchCompaniesByCharset",
+        query = "SELECT * FROM COMPANIES WHERE COMPANY_NAME LIKE CONCAT('%', :NAME , '%')", resultClass = Company.class)
+
+
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
