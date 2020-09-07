@@ -27,9 +27,9 @@ public class ShopServiceTestSuiteTest {
             shopService.addItem(orderId, 10L, 2);
             System.out.println("Adding item: 10, 2 pcs");
             shopService.addItem(orderId, 216L, 1);
-            System.out.println("Adding item: 216, 1 pc");
+            System.out.println("Adding item: 216, 1 pcs");
             shopService.addItem(orderId, 25L, 1);
-            System.out.println("Adding item: 25, 1 pc");
+            System.out.println("Adding item: 25, 1 pcs");
             shopService.addItem(orderId, 100L, 2.5);
             System.out.println("Adding item: 100, 2.5 pcs");
             shopService.addItem(orderId, 11L, 3);
@@ -72,7 +72,7 @@ public class ShopServiceTestSuiteTest {
         order.addItem(new ItemDto(11L,3));
 
         try {
-            orderFacade.processOrder(order,1L);
+            orderFacade.processOrder(order,2L);
         } catch (OrderProcessingException e) {
             //business exception - should be handled in real application
         }
