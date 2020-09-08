@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-09-07T16:47:52" hostname="MJott.local" time="0.032">
+<testsuite name="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-09-08T15:33:40" hostname="MJott.local" time="0.034">
   <properties/>
   <testcase name="testPizzaWithMushroomsAndPaprikaDecoratorGetDescription()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.003"/>
   <testcase name="testPanThickDecoratorGetDescription()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.002"/>
   <testcase name="testCheeseDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.002"/>
-  <testcase name="testPizzaWithPanThickAndHamAndCheeseDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
+  <testcase name="testPizzaWithPanThickAndHamAndCheeseDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.002"/>
   <testcase name="testPizzaWithHamAndCheeseDecoratorGetDescription()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
   <testcase name="testMushroomsDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
-  <testcase name="testPizzaOrderBasicGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
+  <testcase name="testPizzaOrderBasicGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
   <testcase name="testPaprikaDecoratorGetDescription()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
   <testcase name="testCheeseDecoratorGetDescription()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
   <testcase name="testPanThickDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
-  <testcase name="testPizzaWithMushroomsAndPaprikaDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.002"/>
+  <testcase name="testPizzaWithMushroomsAndPaprikaDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
   <testcase name="testPizzaOrderBasicGetDescription()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
-  <testcase name="testPaprikaDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
-  <testcase name="testHamDecoratorGetDescription()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
+  <testcase name="testPaprikaDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
+  <testcase name="testHamDecoratorGetDescription()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
   <testcase name="testMushroomsDecoratorGetDescription()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
-  <testcase name="testHamDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
+  <testcase name="testHamDecoratorGetPrice()" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
   <system-out><![CDATA[Home Pizza + grzybki + papryka
 19
 ]]></system-out>
