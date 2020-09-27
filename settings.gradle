@@ -12,4 +12,5 @@ include 'roboczy'
 include 'kodilla-hibernate'
 include 'kodilla-jdbc'
 include 'kodilla-stream2'
+include 'kodilla-testing2'
 
